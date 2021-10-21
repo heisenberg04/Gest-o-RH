@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'funcionarios',
     'documentos',
     'hora_extra',
+    'departamentos',
 
 ]
 

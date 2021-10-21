@@ -1,8 +1,11 @@
 from django.db import models
+from funcionarios.models import Funcionarios
+
 
 class Documentos(models.Model):
-    descrição: models.CharField(max_length= 100)
-    def __str__(self):
-        return self.descrição
+    pertence = models.ForeignKey(Funcionarios, models.PROTECT)
+    descricao = models.CharField(max_length= 70)
+
+
 
 
